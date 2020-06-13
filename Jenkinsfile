@@ -17,7 +17,7 @@ pipeline {
          steps {
             echo 'Executando testes de regressão'
             sh 'robot -d/logs tests/'
-            robot '/logs/report.html'
+            robot '/logs'
          }
       }
       stage('UAT'){
